@@ -17,6 +17,7 @@ header{
     display: flex;
     align-items: center;
     padding: 0 20px;
+    border-bottom: 2px solid #fff;
 }
 nav{
     height: 100%;
@@ -102,4 +103,35 @@ main button{
 }
 button:hover{
     background-color: rgb(228, 84, 23);
+}
+@media only screen and (max-width: 1000px) {
+    nav{
+        display: none;
+    }
+    header{
+        justify-content: space-between;
+    }
+    header button{
+        width: 30%;
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    header .logo h1{
+        font-size: 20px;
+    }
+    header button{
+        width: 40%;
+        font-size: 12px;
+    }
+    main h1{
+        font-size: 30px;
+    }
+    main p{
+        font-size: 15px;
+    }
+    main button{
+        width: 60%;
+        font-size: 17px;
+    }
 }
